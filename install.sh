@@ -56,7 +56,7 @@ cat > "${HOME}/.gemrc" << EOF
 gem: --no-ri --no-rdoc
 EOF
 
-. "${HOME}/.bashrc"
+source "${HOME}/.bashrc"
 rbenv bootstrap-ubuntu-12-04
 rbenv install 2.0.0-p247
 rbenv global 2.0.0-p247
