@@ -47,7 +47,7 @@ if [ -d "\${RBENV_ROOT}" ]; then
 fi
 EOF
 cat "${HOME}/.bashrc_old" >> "${HOME}/.bashrc"
-rm "${HOME}/.bashrc"
+rm "${HOME}/.bashrc_old"
 
 cat > "${HOME}/.gemrc" << EOF
 ---
