@@ -11,7 +11,7 @@ source nodejs.sh
 source user.sh
 
 # rbenv
-su - $DEPLOYER_USERNAME -c rbenv.sh
+sudo -H -u $DEPLOYER_USERNAME bash -c "bash rbenv.sh"
 
 # Get to know github.com
-su - $DEPLOYER_USERNAME -c github.sh
+sudo -H -u $DEPLOYER_USERNAME bash -c "bash github.sh"
