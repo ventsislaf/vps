@@ -1,7 +1,8 @@
+cd
 curl -L https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
-export RBENV_ROOT="${HOME}/.rbenv"
 mv "${HOME}/.bashrc" "${HOME}/.bashrc_old"
 cat > "${HOME}/.bashrc" << EOF
+export RBENV_ROOT="${HOME}/.rbenv"
 if [ -d "\${RBENV_ROOT}" ]; then
   export PATH="\${RBENV_ROOT}/bin:\${PATH}"
   eval "\$(rbenv init -)"
