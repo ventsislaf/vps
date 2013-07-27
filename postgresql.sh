@@ -6,5 +6,5 @@ apt-get -y update
 apt-get -y install postgresql libpq-dev
 echo "PostgreSQL user:"
 read PSQL_USER
-createuser $PSQL_USER -P
-createdb -O $PSQL_USER $PSQL_USER"_production"
+su - postgres -c "createuser $PSQL_USER -P"
+su - postgres -c "createdb -O $PSQL_USER ${PSQL_USER}_production"
