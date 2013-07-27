@@ -5,7 +5,7 @@ apt-get -y update
 apt-get -y install curl git-core python-software-properties telnet postfix
 
 # clone the repository
-git clone git@github.com:vencislaf/vps.git
+git clone https://github.com/vencislaf/vps.git
 
 # run install.sh
 cd vps
